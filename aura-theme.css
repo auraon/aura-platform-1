@@ -1,0 +1,127 @@
+body, .aura-bg {
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+.logo-animated {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+  filter: drop-shadow(0 0 18px #39FF14);
+  animation: glowLogo 2s infinite alternate;
+}
+@keyframes glowLogo {
+  0% { filter: drop-shadow(0 0 18px #39FF14);}
+  100% { filter: drop-shadow(0 0 36px #39FF14);}
+}
+.neon {
+  color: #39FF14;
+  text-shadow: 0 0 7px #39FF14, 0 0 21px #39FF14;
+}
+.aura-btn, input, select {
+  border: 2px solid #39FF14;
+  background: #000;
+  color: #fff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  border-radius: 22px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  margin: 8px;
+}
+.aura-btn:hover, input:focus, select:focus {
+  box-shadow: 0 0 12px #39FF14;
+  border-color: #00FF9F;
+}
+.aura-floating-tagline {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 100;
+  font-size: 1.4rem;
+  color: #39FF14;
+  background: rgba(0,0,0,0.85);
+  padding: 8px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #39FF14;
+  animation: floatY 3s infinite alternate;
+}
+@keyframes floatY {
+  0% { transform: translateY(0px);}
+  100% { transform: translateY(-18px);}
+}
+.region-toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.toggle-btn {
+  background: #222;
+  border: 2px solid #39FF14;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s, border-color 0.2s;
+  position: relative;
+  font-size: 1rem;
+}
+.toggle-btn.active, .toggle-btn:hover {
+  box-shadow: 0 0 8px #39FF14;
+  border-color: #00FF9F;
+}
+.on-switch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #39FF14;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #39FF14;
+}
+.aura-pricing-table {
+  margin: 18px auto;
+  max-width: 410px;
+  background: #111;
+  border-radius: 14px;
+  box-shadow: 0 0 12px #39FF14;
+  padding: 18px;
+}
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #222;
+  font-size: 1.12rem;
+}
+.plan-title { font-weight: 500; }
+.plan-price { font-weight: bold; }
+
+.floating-icons-container {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+.aura-floating-icon {
+  animation: floatY 2.5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 6px #39FF14);
+}
+
+.progress-section {
+  margin: 38px auto;
+  max-width: 600px;
+  background: #161616;
+  border-radius: 18px;
+  padding: 18px 10px;
+  box-shadow: 0 0 18px #39FF14;
+}
+.quick-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 18px auto;
+}
+.quick-links .aura-btn {
+  margin: 12px;
+}
